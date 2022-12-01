@@ -6,10 +6,14 @@
 
 # Set-Secret -Name AoCSessionId -Secret "..."
 
-if ($args.Count -eq 0) {
-	Write-Host "Please provide the day number"
-	exit 1
-}
+#if ($args.Count -eq 0) {
+#	Write-Host "Please provide the day number"
+#	exit 1
+#}
+
+## Assuming you want todays puzzle
+### This will not account for timezone, all puzzles are posted at midnight EST (-5)
+param([int] $day = (Get-Day -Format "dd"))
 
 cat .\Vault | ConvertTo-SecureString -AsPlainText -Force | Unlock-SecretStore
 

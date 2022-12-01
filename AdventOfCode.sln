@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.github\workflows\ci.yml = .github\workflows\ci.yml
 		Directory.Build.props = Directory.Build.props
 		pull.ps1 = pull.ps1
+		Vault.txt = Vault.txt
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AoC_2022", "src\AoC_2022\AoC_2022.csproj", "{41FC6B27-0F5F-418B-9CEE-84DEB9A95758}"
